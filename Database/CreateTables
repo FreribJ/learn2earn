@@ -23,12 +23,12 @@ PRIMARY KEY(id)
 
 create table budget
 (
-nutzer-id INTEGER NOT NULL AUTO_INCREMENT,
+nutzerid INTEGER,
 auto INTEGER,
 wohnen INTEGER,
 freizeit INTEGER,
 essen INTEGER,
 sparen INTEGER,
-foreign key (nutzerid),
-references user (nutzerid)
+sonstiges INTEGER,
+primary key (nutzerid)
 )
