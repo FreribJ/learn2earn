@@ -2,7 +2,7 @@ MariaDBServer 10.10.02
 
 create table user
 {
-nutzerid INTEGER
+nutzer-id INTEGER
 name VARCHAR
 geburtsdatum DATE      //Format yyyy-mm-tt
 name INTEGER
@@ -16,7 +16,7 @@ create table umsätze
 Datum DATE
 budgettype VARCHAR
 betrag INTEGER
-nutzerid INTEGER
+nutzer-id INTEGER
 beschreibung VARCHAR
 id INTEGER
 foreign key (id)
@@ -26,7 +26,7 @@ references user (nutzerid)
 
 create table budget
 {
-nutzerid INTEGER
+nutzer-id INTEGER
 auto INTEGER
 wohnen INTEGER
 freizeit INTEGER
