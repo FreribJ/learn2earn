@@ -12,12 +12,13 @@ PRIMARY KEY (nutzerid)
 
 create table umsaetze
 (
+id INTEGER NOT NULL AUTO_INCREMENT,
 Datum DATE,
 budgettype VARCHAR(255),
 betrag INTEGER,
 nutzerid INTEGER,
 beschreibung VARCHAR(255),
-PRIMARY KEY(nutzerid)
+PRIMARY KEY(id)
 )
 
 create table budget
