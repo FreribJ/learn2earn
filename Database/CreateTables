@@ -2,9 +2,9 @@ MariaDBServer 10.10.02
 
 create table user
 {
-nutzer-id INTEGER
+nutzerid INTEGER NOT NULL AUTO_INCREMENT
 name VARCHAR
-geburtsdatum DATE      //Format yyyy-mm-tt
+geburtsdatum DATE
 name INTEGER
 passwort INTEGER
 einkommen INTEGER
