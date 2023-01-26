@@ -14,7 +14,7 @@ var con;
 db.getConnection().then(value => con = value)
 
 app.get('/listUser', function (req, res) {
-    con.query('Select u.nutzerid, u.name from user u right join budget b on b.nutzerid = u.nutzerid').then(rows => {
+    con.query('Select u.nutzerid, u.name, u.geburtsdatum, u.passwort, u.einkommen, b.auto, b.wohnen, b.freizeit, b.essen, b.sparen, b.sonstiges from user u inner join budget b on b.nutzerid = u.nutzerid').then(rows => {
         res.send(rows)
     });
 })
