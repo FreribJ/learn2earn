@@ -22,8 +22,10 @@ export class AppComponent {
 
 
   sites: Site[] = [
+  {path:  'home', name: 'Übersicht'},
     {path: 'finance', name: 'Finanzen'},
     {path: 'learning', name: 'Lernen'},
+
   ]
   selectedSite: Site = this.sites[0];
   switchSite() {

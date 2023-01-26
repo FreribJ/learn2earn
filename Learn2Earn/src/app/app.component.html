@@ -1,11 +1,10 @@
-<div><img style="width: 7%" [src]=logo></div>
-<div><mat-form-field>
-  <mat-label>Variante</mat-label>
-  <mat-select [(ngModel)]="selectedSite" (ngModelChange)="switchSite()">
-    <mat-option *ngFor="let site of sites" [value]="site" >
-      {{site.name}}
-    </mat-option>
-  </mat-select>
-</mat-form-field></div><br>
-<router-outlet></router-outlet>
 
+<nav mat-tab-nav-bar>
+  <ng-template mat-tab-label>
+    <span class="my-custom-class">Security</span>
+  </ng-template>
+  <a mat-tab-link class="my-custom-class" *ngFor="let site of sites" [routerLink]="site.path">
+    {{site.name}}
+  </a>
+</nav>
+<router-outlet></router-outlet>

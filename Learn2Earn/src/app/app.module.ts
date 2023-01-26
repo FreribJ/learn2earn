@@ -10,7 +10,6 @@ import {FormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
 import {MatSelectModule} from "@angular/material/select";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatTableModule} from "@angular/material/table";
 
 @NgModule({
   declarations: [
@@ -31,7 +30,6 @@ import {MatTableModule} from "@angular/material/table";
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
