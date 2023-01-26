@@ -1,4 +1,4 @@
-﻿nutzer-id;name;password;geburtsdatum;einkommen
+﻿nutzerid;name;password;geburtsdatum;einkommen
 1;peter;test1;01.02.1999;22000
 2;ulf;test2;02.02.2000;12455
 3;herbert;test3;02.03.2001;900
