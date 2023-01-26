@@ -1,15 +1,15 @@
-﻿id;nutzerid;datum;budget-typ;betrag;beschreibung
+﻿id;nutzerid;datum;budgettyp;betrag;beschreibung
 1;1;13.05.2023;freizeit;-50;fahrradtour
 2;2;14.05.2023;wohnen;-300;miete
 3;2;15.05.2023;auto;-30;radio
-4;4;16.05.2023;essen;-40;burger king
+4;4;16.05.2023;essen;-40;burgerking
 5;5;17.05.2023;freizeit;-70;phantasialand
 6;3;18.05.2023;sparen;-30;ueberschuss
-7;4;19.05.2023;etc;100;Rasenmaehen
+7;4;19.05.2023;etc;100;rasenmaehen
 8;4;20.05.2023;freizeit;-100;kartfahren
 9;1;21.05.2023;wohnen;-450;miete
 10;5;22.05.2023;etc;40;wette
 11;3;23.05.2023;freizeit;-5;doener
 12;4;24.05.2023;sparen;-100;ueberschuss
 13;5;25.05.2023;essen;-50;pizza
-14;1;26.05.2023;freizeit;-200;Grafikkarte
+14;1;26.05.2023;freizeit;-200;grafikkarte
