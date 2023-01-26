@@ -1,6 +1,5 @@
-﻿nutzerid;name;password;geburtsdatum;einkommen
-1;peter;test1;01.02.1999;22000
-2;ulf;test2;02.02.2000;12455
-3;herbert;test3;02.03.2001;900
-4;petra;test4;03.07.2002;1500
-5;heinz;test5;04.09.2003;1200
+﻿1;peter;01.02.1999;test1;22000
+2;ulf;02.02.2000;test2;12455
+3;herbert;02.03.2001;test3;900
+4;petra;03.07.2002;test4;1500
+5;heinz;04.09.2003;test5;1200
