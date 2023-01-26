@@ -10,13 +10,13 @@ einkommen INTEGER,
 PRIMARY KEY (nutzerid)
 )
 
-create table umsätze
+create table umsaetze
 (
 Datum DATE,
-budgettype VARCHAR,
+budgettype VARCHAR(255),
 betrag INTEGER,
-nutzer-id INTEGER NOT NULL AUTO_INCREMENT,
-beschreibung VARCHAR,
+nutzerid INTEGER NOT NULL AUTO_INCREMENT,
+beschreibung VARCHAR(255),
 id INTEGER,
 foreign key (id),
 foreign key (nutzerid)
@@ -25,7 +25,7 @@ references user (nutzerid)
 
 create table budget
 (
-nutzer-id INTEGER NOT NULL AUTO_INCREMENT,
+nutzerid INTEGER NOT NULL AUTO_INCREMENT,
 auto INTEGER,
 wohnen INTEGER,
 freizeit INTEGER,
