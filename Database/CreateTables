@@ -1,37 +1,36 @@
 MariaDBServer 10.10.02
 
 create table user
-{
-nutzerid INTEGER NOT NULL AUTO_INCREMENT
-name VARCHAR
-geburtsdatum DATE
-name INTEGER
-passwort INTEGER
-einkommen INTEGER
-primary key (nutzerid)
-}
+(
+nutzerid INTEGER NOT NULL AUTO_INCREMENT,
+name VARCHAR(255),
+geburtsdatum DATE,
+passwort INTEGER,
+einkommen INTEGER,
+PRIMARY KEY (nutzerid)
+)
 
 create table umsätze
-{
-Datum DATE
-budgettype VARCHAR
-betrag INTEGER
-nutzer-id INTEGER
-beschreibung VARCHAR
-id INTEGER
-foreign key (id)
+(
+Datum DATE,
+budgettype VARCHAR,
+betrag INTEGER,
+nutzer-id INTEGER NOT NULL AUTO_INCREMENT,
+beschreibung VARCHAR,
+id INTEGER,
+foreign key (id),
 foreign key (nutzerid)
 references user (nutzerid)
-}
+)
 
 create table budget
-{
-nutzer-id INTEGER
-auto INTEGER
-wohnen INTEGER
-freizeit INTEGER
-essen INTEGER
-sparen INTEGER
-foreign key (nutzerid)
+(
+nutzer-id INTEGER NOT NULL AUTO_INCREMENT,
+auto INTEGER,
+wohnen INTEGER,
+freizeit INTEGER,
+essen INTEGER,
+sparen INTEGER,
+foreign key (nutzerid),
 references user (nutzerid)
-}
+)
