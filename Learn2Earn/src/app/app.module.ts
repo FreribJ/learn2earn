@@ -12,19 +12,22 @@ import {MatSelectModule} from "@angular/material/select";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from "@angular/material/table";
 import {MatTabsModule} from "@angular/material/tabs";
+import { OverviewComponent } from './overview/overview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LearningComponent,
-    FinanceComponent
+    FinanceComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot([
-      {path: '', component: FinanceComponent},
+      {path: '', component: OverviewComponent},
+      {path: 'overview', component: OverviewComponent},
       {path: 'finance', component: FinanceComponent},
       {path: 'learning', component: LearningComponent},
     ]),
