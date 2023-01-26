@@ -32,37 +32,20 @@ interface betrag {
   betrag: number,
   beschreibung: string
 }
+
+interface auswertung {
+  typ: string,
+  prozent: number,
+}
 @Component({
   selector: 'app-finance',
   templateUrl: './finance.component.html',
   styleUrls: ['./finance.component.css']
 })
 export class FinanceComponent implements OnInit{
-  @ViewChild("chart") chart: ChartComponent | undefined;
-  public chartOptions: Partial<ChartOptions>;
 
-  constructor(private http: HttpClient, chart: FinanceComponent) {
-    this.chartOptions = {
-      series: [44, 55, 13, 43, 22],
-      chart: {
-        width: 380,
-        type: "pie"
-      },
-      labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
-      responsive: [
-        {
-          breakpoint: 480,
-          options: {
-            chart: {
-              width: 200
-            },
-            legend: {
-              position: "bottom"
-            }
-          }
-        }
-      ]
-    }
+  constructor(private http: HttpClient) {
+
   }
 
   ngOnInit() {
@@ -72,6 +55,14 @@ export class FinanceComponent implements OnInit{
   userList: user[] = [];
   betraege: betrag[] = [];
   displayBetraege: string[] = ['betrag', 'beschreibung']
+
+  auswertungen: auswertung[] = [
+    {typ: "Auto", prozent: 19.1},
+    {typ: "Wohnen", prozent: -7.2},
+    {typ: "Ernährung", prozent: 13.5},
+    {typ: "Mobilität", prozent: 10},
+    {typ: "Sparen", prozent: -13.2},
+    {typ: "Freizeit", prozent: 30},]
   loadUser() {
     this.http.get<user[]>('http://localhost:1234/listUser')
       .subscribe(value => {

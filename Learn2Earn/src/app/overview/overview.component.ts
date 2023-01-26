@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./overview.component.css']
 })
 export class OverviewComponent {
-  user: {name: string} = {name: 'Peter'}
+  user: {name: string} = {name: 'Hans'}
 
 }
