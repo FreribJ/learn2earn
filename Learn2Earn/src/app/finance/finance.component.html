@@ -1,1 +1,6 @@
 <p>finance works!</p>
+<button (click)="loadUser()">Lade Daten</button>
+<div *ngFor="let user of userList">
+  {{user.name}} hat {{user.einkommen}}€
+</div>
+Das ergibt ein

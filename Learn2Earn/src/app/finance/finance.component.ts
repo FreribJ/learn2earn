@@ -1,8 +1,18 @@
 import { Component } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
-interface userList {
-  name
+interface user {
+  nutzerid: number,
+  name: string,
+  geburtsdatum: any,
+  passwort: number,
+  einkommen: number,
+  auto: number,
+  wohnen: number,
+  freizeit: number,
+  essen: number,
+  sparen: number,
+  sonstiges: number
 }
 @Component({
   selector: 'app-finance',
@@ -12,8 +22,11 @@ interface userList {
 export class FinanceComponent {
   constructor(private http: HttpClient) {
   }
-  test() {
-    this.http.get<string>('http://localhost:1234/listUser').subscribe(value => console.log(value));
+
+  userList: user[] = []
+  loadUser() {
+    this.http.get<user[]>('http://localhost:1234/listUser')
+      .subscribe(value => value.forEach(u => this.userList.push(u)));
 
   }
 
