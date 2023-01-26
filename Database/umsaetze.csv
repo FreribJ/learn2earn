@@ -1,15 +1,14 @@
-﻿id;nutzerid;datum;budgettyp;betrag;beschreibung
-1;1;2023-05-13;freizeit;-50;fahrradtour
-2;2;2023-05-14;wohnen;-300;miete
-3;2;2023-05-15;auto;-30;radio
-4;4;2023-05-16;essen;-40;burger king
-5;5;2023-05-17;freizeit;-70;phantasialand
-6;3;2023-05-18;sparen;-30;ueberschuss
-7;4;2023-05-19;etc;100;rasenmaehen
-8;4;2023-05-20;freizeit;-100;kartfahren
-9;1;2023-05-21;wohnen;-450;miete
-10;5;2023-05-22;etc;40;wette
-11;3;2023-05-23;freizeit;-5;doener
-12;4;2023-05-24;sparen;-100;ueberschuss
-13;5;2023-05-25;essen;-50;pizza
-14;1;2023-05-26;freizeit;-200;grafikkarte
+﻿1;13.05.2023;freizeit;-50;1;fahrradtour
+2;14.05.2023;wohnen;-300;2;miete
+3;15.05.2023;auto;-30;2;radio
+4;16.05.2023;essen;-40;4;burgerking
+5;17.05.2023;freizeit;-70;5;phantasialand
+6;18.05.2023;sparen;-30;3;ueberschuss
+7;19.05.2023;etc;100;4;rasenmaehen
+8;20.05.2023;freizeit;-100;4;kartfahren
+9;21.05.2023;wohnen;-450;1;miete
+10;22.05.2023;etc;40;5;wette
+11;23.05.2023;freizeit;-5;3;doener
+12;24.05.2023;sparen;-100;4;ueberschuss
+13;25.05.2023;essen;-50;5;pizza
+;;;;     ;
