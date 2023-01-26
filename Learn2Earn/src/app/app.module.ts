@@ -38,7 +38,7 @@ import { NgApexchartsModule } from "ng-apexcharts";
     BrowserAnimationsModule,
     MatTableModule,
     MatTabsModule,
-    NgApexchartsModule
+    NgApexchartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

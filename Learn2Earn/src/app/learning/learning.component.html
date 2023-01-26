@@ -1,13 +1,12 @@
-<p>learning works!</p>
-
 <h1>Willkommen im Lernbereich!</h1>
 <br/>
-<mat-form-field>
+<mat-form-field style="width: 30%">
   <mat-label>Kapitel</mat-label>
   <mat-select [(ngModel)]="selectedKapitel" (ngModelChange)="switchkapitel()">
     <mat-option *ngFor="let kapitel of lerntexteList" [value]="kapitel" >
-      {{kapitel.kapitel}}
+      {{kapitel.index}}. {{kapitel.kapitel}}
     </mat-option>
   </mat-select>
 </mat-form-field>
+<h2>{{selectedKapitel.kapitel}}</h2>
 <p>{{selectedKapitel.text}}</p>
