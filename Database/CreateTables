@@ -1,0 +1,37 @@
+MariaDBServer 10.10.02
+
+create table user
+{
+nutzerid INTEGER
+name VARCHAR
+geburtsdatum DATE      //Format yyyy-mm-tt
+name INTEGER
+passwort INTEGER
+einkommen INTEGER
+primary key (nutzerid)
+}
+
+create table umsätze
+{
+Datum DATE
+budgettype VARCHAR
+betrag INTEGER
+nutzerid INTEGER
+beschreibung VARCHAR
+id INTEGER
+foreign key (id)
+foreign key (nutzerid)
+references user (nutzerid)
+}
+
+create table budget
+{
+nutzerid INTEGER
+auto INTEGER
+wohnen INTEGER
+freizeit INTEGER
+essen INTEGER
+sparen INTEGER
+foreign key (nutzerid)
+references user (nutzerid)
+}
