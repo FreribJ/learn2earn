@@ -10,12 +10,11 @@ const db = mariadb.createPool({
 var express = require('express');
 var app = express();
 
-var cors = require('cors');
-
-// use it before all route definitions
-app.use(cors({origin: 'http://localhost:8081'}));
+var con;
+db.getConnection().then(value => con = value)
 
 app.get('/listUsers', function (req, res) {
+    con.query('Select * from user').then(res => console.log(res));
     res.send({text: 'Es hat funktioniert!'});
 })
 
