@@ -1,0 +1,10 @@
+Du gibst im Vergleich zu deiner Peergroup sehr viel Geld für Auto aus.
+Du gibst im Vergleich zu deiner Peergroup sehr viel Geld für Wohnen aus.
+Du gibst im Vergleich zu deiner Peergroup sehr viel Geld für Freizeit aus.
+Du gibst im Vergleich zu deiner Peergroup sehr viel Geld für Essen aus.
+Du gibst im Vergleich zu deiner Peergroup sehr viel Geld für Sparen aus.
+Du gibst im Vergleich zu deiner Peergroup sehr viel Geld für Sonstiges aus.
+
+
+Du hälst Dich nicht an deine eigenen Ziele.
+Du wolltest für X eigentlich Y ausgeben, hast aber Z ausgegeben.
