@@ -11,7 +11,7 @@ export class AppComponent {
   constructor(private http: HttpClient) { }
 
   test() {
-    this.http.get<string>('http://localhost:1234/listUsers').subscribe(value => console.log(value));
+    this.http.get<string>('http://localhost:1234/listUser').subscribe(value => console.log(value));
 
   }
 }

@@ -14,15 +14,14 @@ var con;
 db.getConnection().then(value => con = value)
 
 app.get('/listUser', function (req, res) {
-    let test = {};
-    con.query('Select name, passwort, einkommen, geburtstag from user').then(rows => {
+    con.query('Select id, name from user right join budget b on b.nutzer-id = id').then(rows => {
         res.send(rows)
     });
 })
 
 app.get('/listIncome', function (req, res) {
     let test = {};
-    con.query('Select nutzer_id, auto, wohnen, freizeit, essen, sparen, ').then(rows => {
+    con.query('Select nutzer-id, auto, wohnen, freizeit, essen, sparen from budget').then(rows => {
         res.send(rows)
     });
 })
