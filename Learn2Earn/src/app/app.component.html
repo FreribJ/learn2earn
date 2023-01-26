@@ -1,2 +1,11 @@
 <button (click)="test()">Test</button>
+<mat-form-field>
+  <mat-label>Variante</mat-label>
+  <mat-select [(ngModel)]="selectedSite" (ngModelChange)="switchSite()">
+    <mat-option *ngFor="let site of sites" [value]="site" >
+      {{site.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field><br>
+<router-outlet></router-outlet>
 
