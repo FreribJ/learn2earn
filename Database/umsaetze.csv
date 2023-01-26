@@ -1,4 +1,4 @@
-﻿id;nutzer-id;datum;budget-typ;betrag;beschreibung
+﻿id;nutzerid;datum;budget-typ;betrag;beschreibung
 1;1;13.05.2023;freizeit;-50;fahrradtour
 2;2;14.05.2023;wohnen;-300;miete
 3;2;15.05.2023;auto;-30;radio
