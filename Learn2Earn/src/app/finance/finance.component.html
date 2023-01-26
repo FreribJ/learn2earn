@@ -2,7 +2,7 @@
 <button (click)="loadBetraege()">Lade Daten</button>
 
 
-<table mat-table [dataSource]="betraege">
+<table mat-table [dataSource]="betraege" style="height: 30%">
   <!-- Position Column -->
   <ng-container matColumnDef="betrag">
     <th mat-header-cell *matHeaderCellDef> Betrag </th>
@@ -18,3 +18,5 @@
   <tr mat-header-row *matHeaderRowDef="displayBetraege"></tr>
   <tr mat-row *matRowDef="let row; columns: displayBetraege;"></tr>
 </table>
+
+

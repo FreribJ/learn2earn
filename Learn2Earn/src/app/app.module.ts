@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from "@angular/material/table";
 import {MatTabsModule} from "@angular/material/tabs";
 import { OverviewComponent } from './overview/overview.component';
+import { NgApexchartsModule } from "ng-apexcharts";
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { OverviewComponent } from './overview/overview.component';
     BrowserAnimationsModule,
     MatTableModule,
     MatTabsModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

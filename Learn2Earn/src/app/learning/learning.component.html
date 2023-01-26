@@ -1,11 +1,13 @@
 <p>learning works!</p>
 
 <h1>Willkommen im Lernbereich!</h1>
+<br/>
 <mat-form-field>
-  <mat-label>Variante</mat-label>
-  <mat-select [(ngModel)]="selectedSite" (ngModelChange)="switchSite()">
-    <mat-option *ngFor="let site of sites" [value]="site" >
-      {{site.name}}
+  <mat-label>Kapitel</mat-label>
+  <mat-select [(ngModel)]="selectedKapitel" (ngModelChange)="switchkapitel()">
+    <mat-option *ngFor="let kapitel of lerntexteList" [value]="kapitel" >
+      {{kapitel.kapitel}}
     </mat-option>
   </mat-select>
-{{lerntexteList[1].kapitel}}
+</mat-form-field>
+<p>{{selectedKapitel.text}}</p>
