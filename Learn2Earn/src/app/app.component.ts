@@ -17,10 +17,7 @@ export class AppComponent {
   title = 'Learn2Earn';
   constructor(private http: HttpClient, private router: Router) { }
 
-  test() {
-    this.http.get<string>('http://localhost:1234/listUser').subscribe(value => console.log(value));
 
-  }
 
   sites: Site[] = [
     {path: 'finance', name: 'Finanzen'},
