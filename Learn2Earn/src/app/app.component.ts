@@ -15,6 +15,8 @@ interface Site {
 })
 export class AppComponent {
   title = 'Learn2Earn';
+
+  logo: string = 'assets/Logo.png';
   constructor(private http: HttpClient, private router: Router) { }
 
 

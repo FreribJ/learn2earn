@@ -19,9 +19,8 @@ app.get('/listUser', function (req, res) {
     });
 })
 
-app.get('/listIncome', function (req, res) {
-    let test = {};
-    con.query('Select u.nutzerid, auto, wohnen, freizeit, essen, sparen from budget').then(rows => {
+app.get('/listBetraege', function (req, res) {
+    con.query('Select Datum, budgettype, betrag, nutzerid, beschreibung from umsaetze').then(rows => {
         res.send(rows)
     });
 })
