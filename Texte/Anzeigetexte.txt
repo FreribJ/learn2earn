@@ -10,3 +10,19 @@ Du hälst Dich nicht an deine eigenen Ziele.
 Du wolltest für X eigentlich Y ausgeben, hast aber Z ausgegeben.
 
 Du willst wissen, wie Du mehr Geld zum Sparen hast? Dann folge diesem Tipp.
+
+Auto Quiz:
+
+Frage 1:
+Was ist der größte Kostenfaktor beim Auto?
+1) TÜV
+2) Versicherung
+3) Tanken
+
+Frage 2:
+Wie kann man effektiv die Auto-Kosten senken?
+1) Fahhrad fahren für kurze Strecken
+2) Nur noch Nachts tanken
+3) Häufig tunen für kleine Vorteile
+
+Frage 3:
