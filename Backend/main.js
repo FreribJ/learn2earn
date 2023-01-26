@@ -13,9 +13,18 @@ var app = express();
 var con;
 db.getConnection().then(value => con = value)
 
-app.get('/listUsers', function (req, res) {
-    con.query('Select * from user').then(res => console.log(res));
-    res.send({text: 'Es hat funktioniert!'});
+app.get('/listUser', function (req, res) {
+    let test = {};
+    con.query('Select name, passwort, einkommen, geburtstag from user').then(rows => {
+        res.send(rows)
+    });
+})
+
+app.get('/listIncome', function (req, res) {
+    let test = {};
+    con.query('Select nutzer_id, auto, wohnen, freizeit, essen, sparen, ').then(rows => {
+        res.send(rows)
+    });
 })
 
 var server = app.listen(1234, function () {
