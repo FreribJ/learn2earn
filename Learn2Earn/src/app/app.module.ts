@@ -14,11 +14,11 @@ import {MatTableModule} from "@angular/material/table";
 import {MatTabsModule} from "@angular/material/tabs";
 import { OverviewComponent } from './overview/overview.component';
 import { NgApexchartsModule } from "ng-apexcharts";
-import {CdkFixedSizeVirtualScroll, CdkVirtualScrollViewport} from "@angular/cdk/scrolling";
-import {ScrollingModule} from '@angular/cdk/scrolling';
-import {MatPaginatorModule} from "@angular/material/paginator";
-
-
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatPaginatorModule} from '@angular/material/paginator'
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,10 +43,11 @@ import {MatPaginatorModule} from "@angular/material/paginator";
     MatTableModule,
     MatTabsModule,
     NgApexchartsModule,
-    CdkVirtualScrollViewport,
-    CdkFixedSizeVirtualScroll,
-    ScrollingModule,
-    MatPaginatorModule
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

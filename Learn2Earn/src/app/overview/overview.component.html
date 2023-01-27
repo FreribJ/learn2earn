@@ -1,4 +1,29 @@
-<div class="all">
-  <h1>Herzlich Willkommen</h1>
-  <h1>{{user.name}}</h1>
+<p>Hallo Peter</p>
+
+
+<div>
+  Finanzeintrag anlegen:
+  <mat-form-field appearance="fill" class="formfields">
+    <mat-label>Typ</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let budget of budgets" [value]="budget.value">
+        {{budget.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="formfields">
+    <mat-label>Betrag in €</mat-label>
+    <input matInput type="text">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="formfield">
+    <mat-label>Kommentar</mat-label>
+    <input matInput placeholder="Kommentar...">
+  </mat-form-field>
+  <div class="button">
+    <button mat-button-color>Bestätigen</button>
+  </div>
 </div>
+<img = ""
+
