@@ -36,6 +36,7 @@ interface betrag {
 interface auswertung {
   typ: string,
   prozent: number,
+  link?: string
 }
 @Component({
   selector: 'app-finance',
@@ -57,14 +58,14 @@ export class FinanceComponent implements OnInit{
   displayBetraege: string[] = ['betrag', 'beschreibung']
 
   auswertungen: auswertung[] = [
-    {typ: "Auto", prozent: 19.1},
+    {typ: "Auto", prozent: 19.1, link: "../learning"},
     {typ: "Wohnen", prozent: -7.2},
     {typ: "Ernährung", prozent: 13.5},
     {typ: "Mobilität", prozent: 10},
     {typ: "Sparen", prozent: -13.2},
     {typ: "Freizeit", prozent: 30},]
   loadUser() {
-    this.http.get<user[]>('http://localhost:1234/listUser')
+    this.http.get<user[]>('http://192.168.137.1:1234/listUser')
       .subscribe(value => {
         value.forEach(u => this.userList.push(u));
 
@@ -73,7 +74,7 @@ export class FinanceComponent implements OnInit{
   }
 
   loadBetraege() {
-    this.http.get<betrag[]>('http://localhost:1234/listBetraege')
+    this.http.get<betrag[]>('http://192.168.137.1:1234/listBetraege')
       .subscribe(value => this.betraege = value);
   }
 }

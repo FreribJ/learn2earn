@@ -17,4 +17,5 @@ export class OverviewComponent {
       {value: 'wohnen' , viewValue: 'Wohnen'},
 
     ];
+  neuesBild: boolean = false;
 }

@@ -1,7 +1,7 @@
-<p>Hallo Peter</p>
 
 
-<div>
+<div class="all">
+<h1>Hallo Peter!</h1>
   Finanzeintrag anlegen:
   <mat-form-field appearance="fill" class="formfields">
     <mat-label>Typ</mat-label>
@@ -22,8 +22,12 @@
     <input matInput placeholder="Kommentar...">
   </mat-form-field>
   <div class="button">
-    <button mat-button-color>Bestätigen</button>
+    <button mat-button-color (click)="neuesBild = true">Bestätigen</button>
   </div>
+
+
+  <img *ngIf="!neuesBild" src="./assets/plot1.png" style="width: 100%">
+
+  <img *ngIf="neuesBild"src="./assets/plot2.png" style="width: 100%">
 </div>
-<img = ""
 
